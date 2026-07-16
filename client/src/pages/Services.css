@@ -1,0 +1,130 @@
+.services-hero {
+  padding-top: 72px;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 30px;
+  padding: 36px;
+}
+
+.service-row__icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: var(--gradient-soft);
+  color: var(--cyan);
+}
+
+.service-row__body h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service-row__body > p {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 640px;
+  margin-bottom: 20px;
+}
+
+.service-row__body ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 24px;
+}
+
+.service-row__body li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14.5px;
+  color: var(--text-muted);
+}
+
+.service-row__body li svg {
+  color: var(--success);
+  flex-shrink: 0;
+}
+
+.custom-plan__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.custom-plan__text h2 {
+  font-size: clamp(26px, 3.6vw, 38px);
+  margin: 18px 0 16px;
+}
+
+.custom-plan__text p {
+  color: var(--text-muted);
+  font-size: 16px;
+  max-width: 460px;
+  margin-bottom: 28px;
+}
+
+.custom-plan__card {
+  padding: 30px;
+}
+
+.custom-plan__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 4px;
+  border-bottom: 1px dashed var(--border);
+  font-size: 14.5px;
+  color: var(--text-muted);
+}
+
+.custom-plan__row span:first-child {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.custom-plan__row--total {
+  border-bottom: none;
+  margin-top: 6px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.custom-plan__row--total span {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.custom-plan__row--total span:last-child {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+@media (max-width: 780px) {
+  .service-row {
+    grid-template-columns: 1fr;
+  }
+
+  .service-row__body ul {
+    grid-template-columns: 1fr;
+  }
+
+  .custom-plan__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
